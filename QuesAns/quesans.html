@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineers Point | Ques & Ans</title>
+    <link rel="stylesheet" href="q&a.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="phone.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Play&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <navbar id="navbar">
+        <div id="Logo_hamburger">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        </div>
+        <div id="nonnavbar">
+            <img src="logo.png" alt="engineerspoint.com">
+            <ul>
+                <li><a href="/MyHtml/home.html">Home</a></li>
+                <li><a href="/MyHtml/extras.html">Calculate</a></li>
+                <li><a href="/MyHtml/formulas.html">Formulas</a></li>
+                <li><a href="/MyHtml/Quesans.html">Ques&Ans</a></li>
+            </ul>
+        </div>
+        <div id="hamburger">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <div>
+                        <div class="content">
+                            <li><a href="">Content</a></li>
+                            <li><a href="/MyHtml/mechanical_home.html">Mechanical</a></li>
+                            <li><a href="/MyHtml/electrical_home.html">Electrical</a></li>
+                            <li><a href="/MyHtml/pneumatics_home.html">Pneumatics</a></li>
+                            <li><a href="/MyHtml/electropneumatic_hompage.html">Electropneumatics</a></li>
+                            <li><a href="/MyHtml/hydraulics_homepage.html">Hydraulics</a></li>
+                        </div>
+                        <div class="content">
+                            <li><a href="#Tolerance">Tolerance</a></li>
+                            <li><a href="#Fits">Fits</a></li>
+                            <li><a href="#Drilling">Drilling</a></li>
+                            <li><a href="#RPM_calculator">RPM Calculation</a></li>
+                            <li><a href="#Turning">Turning</a></li>
+                        </div>
+                        <div class="content">
+                            <li><a href="/MyHtml/extras.html">Unit Conversions</a></li>
+                            <li><a href="/MyHtml/extras.html">Area </a></li>
+                            <li><a href="/MyHtml/extras.html">Volume</a></li>
+                            <li><a href="/MyHtml/extras.html">Mass</a></li>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function openNav() {
+                        document.getElementById("myNav").style.width = "100%";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("myNav").style.width = "0%";
+                    }
+                </script>
+            </div>
+    </navbar>
+    <section id="set1">
+        <details open>
+            <summary> Set 1</summary>
+            <div class="question">
+                <p>1. For milling a workpiece from E335 to a milling cutter = having a diameter d 80 mm become. Which of
+                    the rotational speeds n ( in min – 1 ) Is set when a cutting speed vc = 25 m / to mine a total hold
+                    ?
+                </p>
+                <div class="options">
+                    <li><input type="radio" name="Ans1" id="25rpm"> <label for="25rpm" name="Ans1">25rpm</label></li>
+                    <li><input type="radio" name="Ans1" id="30rpm"> <label for="30rpm" name="Ans1">30rpm</label></li>
+                    <li><input type="radio" name="Ans1" id="32rpm"> <label for="32rpm" name="Ans1">32rpm</label></li>
+                    <li><input type="radio" name="Ans1" id="38rpm"> <label for="38rpm" name="Ans1">38rpm</label></li>
+                </div>
+                <details class="ans">
+                    <summary>Ans</summary>
+                    <div>
+                        <p>Ans</p>
+                    </div>
+                </details>
+            </div>
+            <div class="question">
+                <p>2. In CNC program for a machine all relate Coordinates to the workpiece zero What do you call this
+                    type
+                    of programming ?
+                </p>
+                <div class="options">
+                    <li><input type="radio" name="Ans2" id="Geometric Programming"> <label for="Geometric Programming"
+                            name="Ans1">Geometric Programming</label></li>
+                    <li><input type="radio" name="Ans2" id="direct programming"> <label for="direct programming"
+                            name="Ans1">direct programming</label></li>
+                    <li><input type="radio" name="Ans2" id="Incremental Programming"> <label
+                            for="Incremental Programming" name="Ans1">Incremental Programming</label></li>
+                    <li><input type="radio" name="Ans2" id="Absolute programming"> <label for="Absolute programming"
+                            name="Ans1">Absolute programming</label></li>
+                </div>
+                <details class="ans">
+                    <summary>Ans</summary>
+                    <div>
+                        <p>Ans</p>
+                    </div>
+                </details>
+            </div>
+            <div class="question">
+                <p>3. Which coordinate system is applied to the CNC programming ?
+                </p>
+                <div class="options">
+                    <li><input type="radio" name="Ans1" id="M = 4.8  Nm"> <label for="M = 4.8  Nm" name="Ans1">M = 4.8Nm</label></li>
+                    <li><input type="radio" name="Ans1" id="M = 28.6 Nm "> <label for="M = 28.6 Nm" name="Ans1">M = 28.6Nm</label></li>
+                    <li><input type="radio" name="Ans1" id="M = 286  Nm"> <label for="M = 286  Nm" name="Ans1">M = 286Nm</label></li>
+                    <li><input type="radio" name="Ans1" id="M = 480  Nm"> <label for="M = 480  Nm" name="Ans1">M = 480Nm</label></li>
+                </div>
+                <details class="ans">
+                    <summary>Ans</summary>
+                    <div>
+                        <p>Ans</p>
+                    </div>
+                </details>
+            </div>
+            <div class="question">
+                <p>4. Which coordinate system is applied to the CNC programming ?
+                </p>
+                <div class="options">
+                    <li><input type="radio" name="Ans1" id="M = 4.8  Nm"> <label for="M = 4.8  Nm" name="Ans1">M = 4.8
+                            Nm</label></li>
+                    <li><input type="radio" name="Ans1" id="M = 28.6 Nm "> <label for="M = 28.6 Nm" name="Ans1">M = 28.6
+                            Nm</label></li>
+                    <li><input type="radio" name="Ans1" id="M = 286  Nm"> <label for="M = 286  Nm" name="Ans1">M = 286
+                            Nm</label></li>
+                    <li><input type="radio" name="Ans1" id="M = 480  Nm"> <label for="M = 480  Nm" name="Ans1">M = 480
+                            Nm</label></li>
+                </div>
+                <details class="ans">
+                    <summary>Ans</summary>
+                    <div>
+                        <p>Ans</p>
+                    </div>
+                </details>
+            </div>
+            <div class="question">
+                <p>5. Which statement can be derived from the law of levers?</p>
+                <div class="options">
+                    <li><input type="radio" name="Ans1" id="op4.1"> <label for="op4.1" name="Ans1">Large loads are with
+                            long moment arm and recently load arm can be moved.</label></li>
+                    <li><input type="radio" name="Ans1" id="op4.2"> <label for="op4.2" name="Ans1"> Large loads are
+                            basically a Lever arm ratio of 2 to 1 can be moved.</label></li>
+                    <li><input type="radio" name="Ans1" id="op4.3"> <label for="op4.3" name="Ans1">Large loads are a
+                            short moment arm and a long load arm can be moved.</label></li>
+                    <li><input type="radio" name="Ans1" id="op4.4"> <label for="op4.4" name="Ans1">Large loads are
+                            basically a Lever arm ratio of 2 to 1 can be moved</label></li>
+                </div>
+                <details class="ans">
+                    <summary>Ans</summary>
+                    <div>
+                        <p>Ans</p>
+                    </div>
+                </details>
+            </div>
+            <div class="question">
+                <p> 6. A pinion gear is the gear ratio i = 3: 1 was obtained. How large is the number of teeth must be
+                    Z2,
+                    when Z1 has been set with 20 teeth?</p>
+                <div class="options">
+                    <li><input type="radio" name="Ans1" id="op4.1"> <label for="op4.1" name="Ans1">20</label></li>
+                    <li><input type="radio" name="Ans1" id="op4.2"> <label for="op4.2" name="Ans1">30</label></li>
+                    <li><input type="radio" name="Ans1" id="op4.3"> <label for="op4.3" name="Ans1">60</label></li>
+                    <li><input type="radio" name="Ans1" id="op4.4"> <label for="op4.4" name="Ans1">120</label></li>
+                </div>
+                <details class="ans">
+                    <summary>Ans</summary>
+                    <div>
+                        <p>Ans</p>
+                    </div>
+                </details>
+            </div>
+            <div class="question">
+                <p>7. Full form of PLC is....</p>
+                <div class="options">
+                    <li><input type="radio" name="Ans1" id="op4.1"> <label for="op4.1" name="Ans1">Programming And Logic
+                            control</label></li>
+                    <li><input type="radio" name="Ans1" id="op4.2"> <label for="op4.2" name="Ans1">Programmable Logic
+                            Control</label></li>
+                    <li><input type="radio" name="Ans1" id="op4.3"> <label for="op4.3" name="Ans1">Programme Logic
+                            Control</label></li>
+                    <li><input type="radio" name="Ans1" id="op4.4"> <label for="op4.4" name="Ans1">Programmer Logic
+                            Control</label></li>
+                </div>
+                <details class="ans">
+                    <summary>Ans</summary>
+                    <div>
+                        <p>Ans</p>
+                    </div>
+                </details>
+            </div>
+            <div class="question">
+                <p>8. What is the function of the pilot in a spot facing tool? </p>
+                <div class="options">
+                    <li><input type="radio" name="Ans1" id="op7.1"> <label for="op7.1" name="Ans1">It guides and centers
+                            the spot facing tool.</label></li>
+                    <li><input type="radio" name="Ans1" id="op7.2"> <label for="op7.2" name="Ans1">It prevents the
+                            unwanted drain of the lubricant.</label></li>
+                    <li><input type="radio" name="Ans1" id="op7.3"> <label for="op7.3" name="Ans1">It finishes the
+                            existing hole.</label></li>
+                    <li><input type="radio" name="Ans1" id="op7.4"> <label for="op7.4" name="Ans1">It reduces the
+                            friction at the cutting edges.</label></li>
+                </div>
+                <details class="ans">
+                    <summary>Ans</summary>
+                    <div>
+                        <p>Ans</p>
+                    </div>
+                </details>
+            </div>
+            <div class="question">
+                <p>9. Which statement about lever principle is correct?</p>
+                <div class="options">
+                    <li><input type="radio" name="Ans1" id="op8.1"> <label for="op8.1" name="Ans1">To move heavy loads
+                            with long effort arm and short load arm. </label></li>
+                    <li><input type="radio" name="Ans1" id="op8.2"> <label for="op8.2" name="Ans1">To move heavy loads
+                            with a short effort arm and a long load arm.</label></li>
+                    <li><input type="radio" name="Ans1" id="op8.3"> <label for="op8.3" name="Ans1">To move heavy loads
+                            with the same effort arm and load arm.</label></li>
+                    <li><input type="radio" name="Ans1" id="op8.4"> <label for="op8.4" name="Ans1">Heavy loads are moved
+                            with a ratio of 2:1 for lever arm.
+                </div>
+                <details>
+                    <summary>Ans</summary>
+                    <div>
+                        <p>Ans</p>
+                    </div>
+                </details>
+            </div>
+            <div class="question">
+                <p>10. Which of the transmission system is best suited to transmit large torque from a motor to a
+                    machine at
+                    a large distance?</p>
+                <div class="options">
+                    <li><input type="radio" name="Ans1" id="op9.1"> <label for="op9.1" name="Ans1">gear drive</label>
+                    </li>
+                    <li><input type="radio" name="Ans1" id="op9.2"> <label for="op9.2" name="Ans1">chain drive</label>
+                    </li>
+                    <li><input type="radio" name="Ans1" id="op9.3"> <label for="op9.3" name="Ans1">belt drive</label>
+                    </li>
+                    <li><input type="radio" name="Ans1" id="op9.4"> <label for="op9.4" name="Ans1">friction wheels
+                        </label> </li>
+                </div>
+                <details>
+                    <summary>Ans</summary>
+                    <div>
+                        <p>Ans</p>
+                    </div>
+                </details>
+            </div>
+
+    </section>
+</body>
+
+</html>

@@ -1,316 +1,867 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineers Point | Ques & Ans</title>
-    <link rel="stylesheet" href="q&a.css">
-    <link rel="stylesheet" media="screen and (max-width: 800px)" href="phone.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Play&display=swap" rel="stylesheet">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+                crossorigin="anonymous">
+        <title>Mechanical Engineer's Point</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;700&display=swap" rel="stylesheet">
+        <title>Hydraulics Engineer's Point</title>
+        <style>
+            *{
+                font-family: 'IBM Plex Sans Arabic', sans-serif;
+            }
+        </style>
 </head>
 
 <body>
-    <navbar id="navbar">
-        <div id="Logo_hamburger">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-        </div>
-        <div id="nonnavbar">
-            <img src="logo.png" alt="engineerspoint.com">
-            <ul>
-                <li><a href="https://sachinyadav74.github.io/Home/Home/home.html">Home</a></li>
-                <li><a href="https://sachinyadav74.github.io/Extras/extras/extras.html">Calculate</a></li>
-                <li><a href="https://sachinyadav74.github.io/Formulas/Formulas/formulas.html">Formulas</a></li>
-                <li><a href="https://sachinyadav74.github.io/QuesAndAns/QuesAns/quesans.html">Ques&Ans</a></li>
-            </ul>
-        </div>
-        <div id="hamburger">
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                    <div>
-                        <div class="content">
-                            <li><a href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Mechanical</a></li>
-                            <li><a href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">Electrical</a></li>
-                            <li><a href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Pneumatics</a></li>
-                            <li><a href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Electropneumatics</a></li>
-                            <li><a href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Hydraulics</a></li>
-                        </div>
-                        <div class="content">
-                            <li><a href="https://sachinyadav74.github.io/SI_units/SI_units/si_units.html">SI Units</a></li>
-                            <li><a href="https://sachinyadav74.github.io/Extras/extras/extras.html">Area </a></li>
-                            <li><a href="https://sachinyadav74.github.io/Extras/extras/extras.html">Volume</a></li>
-                            <li><a href="https://sachinyadav74.github.io/Extras/extras/extras.html">Mass</a></li>
-                            <li><a href="https://sachinyadav74.github.io/Formulas/Formulas/formulas.html">Formulas</a></li>
-                        </div>
+        <!-- Navigation -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark fs-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="https://sachinyadav74.github.io/Home/Home/home.html
+                    ">ENGINEER'S POINT</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Topics
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Mechanical</a></li>
+                                    <li><a class="dropdown-item" href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">Electrical</a></li>
+                                    <li><a class="dropdown-item" href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Hydraulics</a></li>
+                                    <li><a class="dropdown-item" href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Pneumatics</a></li>
+                                    <li><a class="dropdown-item" href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Electroneumatics</a></li>
+                                    <!-- <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://sachinyadav74.github.io/Extras/Extras/extra.html">Calculate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://sachinyadav74.github.io/QuesAndAns/QuesAns/quesans.html">Ques&Ans</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://sachinyadav74.github.io/SI_units/SI_units/si_units.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
                     </div>
                 </div>
-                <script>
-                    function openNav() {
-                        document.getElementById("myNav").style.width = "100%";
-                    }
+            </nav>
 
-                    function closeNav() {
-                        document.getElementById("myNav").style.width = "0%";
-                    }
-                </script>
-            </div>
-    </navbar>
-    <section id="set1">
-        <details open>
-            <summary> Set 1</summary>
-            <div class="question">
-                <p>1. For milling a workpiece from E335 to a milling cutter = having a diameter d 80 mm become. Which of
-                    the rotational speeds n ( in min – 1 ) Is set when a cutting speed vc = 25 m / to mine a total hold
-                    ?
-                </p>
-                <div class="options">
-                    <li><input type="radio" name="Ans1" id="25rpm"> <label for="25rpm" name="Ans1">25rpm</label></li>
-                    <li><input type="radio" name="Ans1" id="30rpm"> <label for="30rpm" name="Ans1">30rpm</label></li>
-                    <li><input type="radio" name="Ans1" id="32rpm"> <label for="32rpm" name="Ans1">32rpm</label></li>
-                    <li><input type="radio" name="Ans1" id="38rpm"> <label for="38rpm" name="Ans1">38rpm</label></li>
-                </div>
-                <details class="ans">
-                    <summary>Ans</summary>
-                    <div>
-                        <p>Ans</p>
-                    </div>
-                </details>
-            </div>
-            <div class="question">
-                <p>2. In CNC program for a machine all relate Coordinates to the workpiece zero What do you call this
-                    type
-                    of programming ?
-                </p>
-                <div class="options">
-                    <li><input type="radio" name="Ans2" id="Geometric Programming"> <label for="Geometric Programming"
-                            name="Ans1">Geometric Programming</label></li>
-                    <li><input type="radio" name="Ans2" id="direct programming"> <label for="direct programming"
-                            name="Ans1">direct programming</label></li>
-                    <li><input type="radio" name="Ans2" id="Incremental Programming"> <label
-                            for="Incremental Programming" name="Ans1">Incremental Programming</label></li>
-                    <li><input type="radio" name="Ans2" id="Absolute programming"> <label for="Absolute programming"
-                            name="Ans1">Absolute programming</label></li>
-                </div>
-                <details class="ans">
-                    <summary>Ans</summary>
-                    <div>
-                        <p>Ans</p>
-                    </div>
-                </details>
-            </div>
-            <div class="question">
-                <p>3. Which coordinate system is applied to the CNC programming ?
-                </p>
-                <div class="options">
-                    <li><input type="radio" name="Ans1" id="M = 4.8  Nm"> <label for="M = 4.8  Nm" name="Ans1">M = 4.8Nm</label></li>
-                    <li><input type="radio" name="Ans1" id="M = 28.6 Nm "> <label for="M = 28.6 Nm" name="Ans1">M = 28.6Nm</label></li>
-                    <li><input type="radio" name="Ans1" id="M = 286  Nm"> <label for="M = 286  Nm" name="Ans1">M = 286Nm</label></li>
-                    <li><input type="radio" name="Ans1" id="M = 480  Nm"> <label for="M = 480  Nm" name="Ans1">M = 480Nm</label></li>
-                </div>
-                <details class="ans">
-                    <summary>Ans</summary>
-                    <div>
-                        <p>Ans</p>
-                    </div>
-                </details>
-            </div>
-            <div class="question">
-                <p>4. Which coordinate system is applied to the CNC programming ?
-                </p>
-                <div class="options">
-                    <li><input type="radio" name="Ans1" id="M = 4.8  Nm"> <label for="M = 4.8  Nm" name="Ans1">M = 4.8
-                            Nm</label></li>
-                    <li><input type="radio" name="Ans1" id="M = 28.6 Nm "> <label for="M = 28.6 Nm" name="Ans1">M = 28.6
-                            Nm</label></li>
-                    <li><input type="radio" name="Ans1" id="M = 286  Nm"> <label for="M = 286  Nm" name="Ans1">M = 286
-                            Nm</label></li>
-                    <li><input type="radio" name="Ans1" id="M = 480  Nm"> <label for="M = 480  Nm" name="Ans1">M = 480
-                            Nm</label></li>
-                </div>
-                <details class="ans">
-                    <summary>Ans</summary>
-                    <div>
-                        <p>Ans</p>
-                    </div>
-                </details>
-            </div>
-            <div class="question">
-                <p>5. Which statement can be derived from the law of levers?</p>
-                <div class="options">
-                    <li><input type="radio" name="Ans1" id="op4.1"> <label for="op4.1" name="Ans1">Large loads are with
-                            long moment arm and recently load arm can be moved.</label></li>
-                    <li><input type="radio" name="Ans1" id="op4.2"> <label for="op4.2" name="Ans1"> Large loads are
-                            basically a Lever arm ratio of 2 to 1 can be moved.</label></li>
-                    <li><input type="radio" name="Ans1" id="op4.3"> <label for="op4.3" name="Ans1">Large loads are a
-                            short moment arm and a long load arm can be moved.</label></li>
-                    <li><input type="radio" name="Ans1" id="op4.4"> <label for="op4.4" name="Ans1">Large loads are
-                            basically a Lever arm ratio of 2 to 1 can be moved</label></li>
-                </div>
-                <details class="ans">
-                    <summary>Ans</summary>
-                    <div>
-                        <p>Ans</p>
-                    </div>
-                </details>
-            </div>
-            <div class="question">
-                <p> 6. A pinion gear is the gear ratio i = 3: 1 was obtained. How large is the number of teeth must be
-                    Z2,
-                    when Z1 has been set with 20 teeth?</p>
-                <div class="options">
-                    <li><input type="radio" name="Ans1" id="op4.1"> <label for="op4.1" name="Ans1">20</label></li>
-                    <li><input type="radio" name="Ans1" id="op4.2"> <label for="op4.2" name="Ans1">30</label></li>
-                    <li><input type="radio" name="Ans1" id="op4.3"> <label for="op4.3" name="Ans1">60</label></li>
-                    <li><input type="radio" name="Ans1" id="op4.4"> <label for="op4.4" name="Ans1">120</label></li>
-                </div>
-                <details class="ans">
-                    <summary>Ans</summary>
-                    <div>
-                        <p>Ans</p>
-                    </div>
-                </details>
-            </div>
-            <div class="question">
-                <p>7. Full form of PLC is....</p>
-                <div class="options">
-                    <li><input type="radio" name="Ans1" id="op4.1"> <label for="op4.1" name="Ans1">Programming And Logic
-                            control</label></li>
-                    <li><input type="radio" name="Ans1" id="op4.2"> <label for="op4.2" name="Ans1">Programmable Logic
-                            Control</label></li>
-                    <li><input type="radio" name="Ans1" id="op4.3"> <label for="op4.3" name="Ans1">Programme Logic
-                            Control</label></li>
-                    <li><input type="radio" name="Ans1" id="op4.4"> <label for="op4.4" name="Ans1">Programmer Logic
-                            Control</label></li>
-                </div>
-                <details class="ans">
-                    <summary>Ans</summary>
-                    <div>
-                        <p>Ans</p>
-                    </div>
-                </details>
-            </div>
-            <div class="question">
-                <p>8. What is the function of the pilot in a spot facing tool? </p>
-                <div class="options">
-                    <li><input type="radio" name="Ans1" id="op7.1"> <label for="op7.1" name="Ans1">It guides and centers
-                            the spot facing tool.</label></li>
-                    <li><input type="radio" name="Ans1" id="op7.2"> <label for="op7.2" name="Ans1">It prevents the
-                            unwanted drain of the lubricant.</label></li>
-                    <li><input type="radio" name="Ans1" id="op7.3"> <label for="op7.3" name="Ans1">It finishes the
-                            existing hole.</label></li>
-                    <li><input type="radio" name="Ans1" id="op7.4"> <label for="op7.4" name="Ans1">It reduces the
-                            friction at the cutting edges.</label></li>
-                </div>
-                <details class="ans">
-                    <summary>Ans</summary>
-                    <div>
-                        <p>Ans</p>
-                    </div>
-                </details>
-            </div>
-            <div class="question">
-                <p>9. Which statement about lever principle is correct?</p>
-                <div class="options">
-                    <li><input type="radio" name="Ans1" id="op8.1"> <label for="op8.1" name="Ans1">To move heavy loads
-                            with long effort arm and short load arm. </label></li>
-                    <li><input type="radio" name="Ans1" id="op8.2"> <label for="op8.2" name="Ans1">To move heavy loads
-                            with a short effort arm and a long load arm.</label></li>
-                    <li><input type="radio" name="Ans1" id="op8.3"> <label for="op8.3" name="Ans1">To move heavy loads
-                            with the same effort arm and load arm.</label></li>
-                    <li><input type="radio" name="Ans1" id="op8.4"> <label for="op8.4" name="Ans1">Heavy loads are moved
-                            with a ratio of 2:1 for lever arm.
-                </div>
-                <details>
-                    <summary>Ans</summary>
-                    <div>
-                        <p>Ans</p>
-                    </div>
-                </details>
-            </div>
-            <div class="question">
-                <p>10. Which of the transmission system is best suited to transmit large torque from a motor to a
-                    machine at
-                    a large distance?</p>
-                <div class="options">
-                    <li><input type="radio" name="Ans1" id="op9.1"> <label for="op9.1" name="Ans1">gear drive</label>
-                    </li>
-                    <li><input type="radio" name="Ans1" id="op9.2"> <label for="op9.2" name="Ans1">chain drive</label>
-                    </li>
-                    <li><input type="radio" name="Ans1" id="op9.3"> <label for="op9.3" name="Ans1">belt drive</label>
-                    </li>
-                    <li><input type="radio" name="Ans1" id="op9.4"> <label for="op9.4" name="Ans1">friction wheels
-                        </label> </li>
-                </div>
-                <details>
-                    <summary>Ans</summary>
-                    <div>
-                        <p>Ans</p>
-                    </div>
-                </details>
-            </div>
+        <!-- Content -->
+        <div class="container">
+                <div class="accordion my-5" id="accordionExample">
+                        <!-- 1 Work power energy -->
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed type=button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseTolerance" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                Work, Power, Energy Calculation
+                                        </button>
+                                </h2>
+                                <div id="collapseTolerance" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                                <p>Q1)Mass = 50kg displacement = 1.9m find work done.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q1.1"
+                                                                name="q11"> <label for="q1.1">950</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q1.2"
+                                                                name="q11"> <label for="q1.2">900</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q1.3"
+                                                                name="q11"> <label for="q1.3">850</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q1.4"
+                                                                name="q11"> <label for="q1.4">800</label></div>
 
-    </section>
-    <section>
-        <div id="overview">
-            <h1>Overview</h1>
-            <div id="overview_content">
-                <div class="overview_elements">
-                    <h2> <a href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Mechanical</a></h2>
-                    <li><a href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Drilling</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Milling</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Turning</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Tolerance</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">CNC</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Engineerign Drawings</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Mechanical/Mechanical/mechanical_home.html">Catia Desiging</a></li>
+                                                <p>Q2)Mass = 50kg displacement = 1.9m time=10sec find power consumed.
+                                                </p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q2.1"
+                                                                name="q12"> <label for="q2.1">80</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q2.2"
+                                                                name="q12"> <label for="q2.2">85</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q2.3"
+                                                                name="q12"> <label for="q2.3">90</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q2.4"
+                                                                name="q12"> <label for="q2.4">95</label></div>
+                                                <p>Q3)Work done = 1400J mass = 350kg find displacement.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q3.1"
+                                                                name="q13"> <label for="q3.1">0.2m</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q3.2"
+                                                                name="q13"> <label for="q3.2">0.3m</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q3.3"
+                                                                name="q13"> <label for="q3.3">0.4m</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q3.4"
+                                                                name="q13"> <label for="q3.4">0.5m</label></div>
+                                                <p>Q4)Mass = 80kg displacement = 150mm time=12sec find work done & power
+                                                        consumed.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q4.1"
+                                                                name="q1"> <label for="q4.1">120J, 20W</label>
+                                                </div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q4.2"
+                                                                name="q14"> <label for="q4.2">120J, 10W</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q4.3"
+                                                                name="q14"> <label for="q4.3">150J, 20W</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q4.4"
+                                                                name="q14"> <label for="q4.4">120J, 5W</label></div>
+
+                                                <p>Q5)Power consumed = 15kw displacement = 5m time=30sec find work done.
+                                                </p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q5.1"
+                                                                name="q1"><label for="q5.1">500</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q5.2"
+                                                                name="q15"><label for="q5.2">400</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q5.3"
+                                                                name="q15"><label for="q5.3">450</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q5.4"
+                                                                name="q15"> <label for="q5.4">550</label></div>
+                                                <p>Q6)Find power consumed in 1minute by a motor to fill a tank whose
+                                                        diameter is 3m, height is 2m and is placed at 6m above motor.
+                                                </p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q6.1"
+                                                                name="q16"> <label for="q6.1">14120</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q6.2"
+                                                                name="q16"> <label for="q6.2">14130</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q6.3"
+                                                                name="q16"> <label for="q6.3">14110</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q6.4"
+                                                                name="q16"> <label for="q6.4">14140</label></div>
+                                                <p>Q7)Find power consumed by conveyor of belt drive motor in 1minute to
+                                                        transfer 600N of force with pulley diameter of 150mm and 800rpm.
+                                                </p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q7.1"
+                                                                name="q17"> <label for="q7.1">3768</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q7.2"
+                                                                name="q17"> <label for="q7.2">3788</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q7.3"
+                                                                name="q17"> <label for="q7.3">3688</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q7.4"
+                                                                name="q17"> <label for="q7.4">3678</label></div>
+                                                <p>Q8)Find efficiency if power input is 4Kw power output is 3kw.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q8.1"
+                                                                name="q18"> <label for="q8.1">70</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q8.2"
+                                                                name="q18"> <label for="q8.2">75</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q8.3"
+                                                                name="q18"> <label for="q8.3">80</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q8.4"
+                                                                name="q18"> <label for="q8.4">85</label></div>
+                                                <p>Q9)Find power input of motor with efficiency is 0.75 to pump 1m³ of
+                                                        water in 1min to height of 1m.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q9.1"
+                                                                name="q19"> <label for="q9.1">222</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q9.2"
+                                                                name="q19"> <label for="q9.2">215</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q9.3"
+                                                                name="q19"> <label for="q9.3">230</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q9.4"
+                                                                name="q19"> <label for="q9.4">228</label></div>
+                                                <p>Q10)Efficiency of cylinder is 70%, piston dia is 250mm, stroke length
+                                                        is 400mm. Pressure input is 5 bar and its extension velocity is
+                                                        2m/s. what is the input power in kw?</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q10.1"
+                                                                name="q20"> <label for="q10.1">0.6</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q10.2"
+                                                                name="q20"> <label for="q10.2">0.7</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q10.3"
+                                                                name="q20"> <label for="q10.3">0.8</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q10.4"
+                                                                name="q20"> <label for="q10.4">0.9</label></div>
+                                        </div>
+                                        <!-- resistor -->
+                                </div>
+                        </div>
+                        <!--2 Power, star, delta -->
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed type=button" data-bs-toggle="collapse"
+                                                data-bs-target="#stardelta" aria-expanded="false" aria-controls="collapseTwo">
+                                                Power, star, delta
+                                        </button>
+                                </h2>
+                                <div id="stardelta" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                                <p>Q1)Mass = 50kg displacement = 1.9m find work done.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q1.1"
+                                                                name="q21"> <label for="2q1.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q1.2"
+                                                                name="q21"> <label for="2q1.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q1.3"
+                                                                name="q21"> <label for="2q1.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q1.4"
+                                                                name="q21"> <label for="2q1.4">Sachin4</label></div>
+
+                                                <p>Q2)Mass = 50kg displacement = 1.9m time=10sec find power consumed.
+                                                </p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q2.1"
+                                                                name="q22"> <label for="2q2.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q2.2"
+                                                                name="q22"> <label for="2q2.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q2.3"
+                                                                name="q22"> <label for="2q2.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q2.4"
+                                                                name="q22"> <label for="2q2.4">Sachin4</label></div>
+                                                <p>Q3)Work done = 1400J mass = 350kg find displacement.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q3.1"
+                                                                name="q23"> <label for="2q3.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q3.2"
+                                                                name="q23"> <label for="2q3.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q3.3"
+                                                                name="q23"> <label for="2q3.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q3.4"
+                                                                name="q23"> <label for="2q3.4">Sachin4</label></div>
+                                                <p>Q4)Mass = 80kg displacement = 150mm time=12sec find work done & power
+                                                        consumed.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q4.1"
+                                                                name="q24"> <label for="2q4.1">Sachin</label>
+                                                </div>
+                                                <div><input class="form24check-input mx-2" type="radio" id="2q4.2"
+                                                                name="q24"> <label for="2q4.2">Sachin2</label></div>
+                                                <div><input class="form24check-input mx-2" type="radio" id="2q4.3"
+                                                                name="q24"> <label for="2q4.3">Sachin3</label></div>
+                                                <div><input class="form24check-input mx-2" type="radio" id="2q4.4"
+                                                                name="q24"> <label for="2q4.4">Sachin4</label></div>
+
+                                                <p>Q5)Power consumed = 15kw displacement = 5m time=30sec find work done.
+                                                </p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q5.1"
+                                                                name="q1"> <label for="2q5.1">Sachin</label>
+                                                </div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q5.2"
+                                                                name="q1"> <label for="2q5.2">Sachin2</label>
+                                                </div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q5.3"
+                                                                name="q1"> <label for="2q5.3">Sachin3</label>
+                                                </div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q5.4"
+                                                                name="q1"> <label for="2q5.4">Sachin4</label>
+                                                </div>
+                                                <p>Q6)Find power consumed in 1minute by a motor to fill a tank whose
+                                                        diameter is 3m, height is 2m and is placed at 6m above motor.
+                                                </p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q6.1"
+                                                                name="q1"> <label for="2q6.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q6.2"
+                                                                name="q1"> <label for="2q6.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q6.3"
+                                                                name="q1"> <label for="2q6.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q6.4"
+                                                                name="q1"> <label for="2q6.4">Sachin4</label></div>
+                                                <p>Q7)Find power consumed by conveyor of belt drive motor to transfer
+                                                        600N of force with pulley diameter of 150mm and 800rpm.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q7.1"
+                                                                name="q1"> <label for="2q7.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q7.2"
+                                                                name="q1"> <label for="2q7.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q7.3"
+                                                                name="q1"> <label for="2q7.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q7.4"
+                                                                name="q1"> <label for="2q7.4">Sachin4</label></div>
+                                                <p>Q8)Find efficiency if power input is 4Kw power output is 3kw.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q8.1"
+                                                                name="q1"> <label for="2q8.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q8.2"
+                                                                name="q1"> <label for="2q8.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q8.3"
+                                                                name="q1"> <label for="2q8.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q8.4"
+                                                                name="q1"> <label for="2q8.4">Sachin4</label></div>
+                                                <p>Q9)Find power input of motor with efficiency is 0.75 to pump 1m³/min
+                                                        of water to height of 1m.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q9.1"
+                                                                name="q1"> <label for="2q9.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q9.2"
+                                                                name="q1"> <label for="2q9.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q9.3"
+                                                                name="q1"> <label for="2q9.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q9.4"
+                                                                name="q1"> <label for="2q9.4">Sachin4</label></div>
+                                                <p>Q10)Efficiency of cylinder is 70%, piston dia is 250mm, stroke length
+                                                        is 400mm. Pressure input is 5 bar and its extension velocity is
+                                                        2m/s. what is the input power in kw?</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q10.1"
+                                                                name="q1"> <label for="2q10.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q10.2"
+                                                                name="q1"> <label for="2q10.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q10.3"
+                                                                name="q1"> <label for="2q10.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q10.4"
+                                                                name="q1"> <label for="2q10.4">Sachin4</label></div>
+                                        </div>
+                                        <!-- resistor -->
+                                </div>
+                        </div>
+                        <!-- 3Resistance, Current and Voltage -->
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed type=button" data-bs-toggle="collapse"
+                                                data-bs-target="#vir" aria-expanded="false" aria-controls="collapseTwo">
+                                                Resistance, Current and Voltage
+                                        </button>
+                                </h2>
+                                <div id="vir" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                                <p>Q1)Total resistance of 3 resistors in series is 300Ω. R1=80Ω R2=180Ω
+                                                        and current is 200mA. Find R3</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q1.1"name="q1"> <label for="3q1.1">40</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q1.2"name="q1"> <label for="3q1.2">20</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q1.3"name="q1"> <label for="3q1.3">30</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q1.4"name="q1"> <label for="3q1.4">35</label></div>
+
+                                                <p>Q2)In a circuit with constant voltage and variable resistor, if
+                                                        resistor value is increased then current value will</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q2.1"name="q2"> <label for="3q2.1">increase</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q2.2"name="q2"> <label for="3q2.2">decrease</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q2.3"name="q2"> <label for="3q2.3">increase two times</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q2.4"name="q2"> <label for="3q2.4">decrease two times</label>
+                                                </div>
+                                                <p>Q3)5 Resistors of different value are connected in series.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q3.1"name="q3"> <label for="3q3.1">Voltage will be same </label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q3.2"name="q3"> <label for="3q3.2">current will be same all over circuit</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q3.3"name="q3"> <label for="3q3.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q3.4"name="q3"> <label for="3q3.4">Sachin4</label></div>
+                                                <p>Q4)Voltage of 220V is applied across 200Ω and 500Ω resistors connected in series. Find Current in
+                                                        the circuit. </p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q4.1"name="q4"> <label for="3q4.1">0.31</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q4.2"name="q4"> <label for="3q4.2">0.21</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q4.3"name="q4"> <label for="3q4.3">0.41</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q4.4"name="q4"> <label for="3q4.4">0.51</label></div>
+
+                                                <p>Q5)Three resistors of 8Ω, 12Ω, 20Ω are connected in series. Find
+                                                        Total resistor.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q5.1"name="q5"> <label for="3q5.1">30</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q5.2"name="q5"> <label for="3q5.2">40</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q5.3"name="q5"> <label for="3q5.3">50</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q5.4"name="q5"> <label for="3q5.4">60</label></div>
+                                                <p>Q6)Three resistor are connected in parallel. 60Ω, 50Ω, 40Ω. Find
+                                                        total resistance.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q6.1"name="q6"> <label for="3q6.1">16.2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q6.2"name="q6"> <label for="3q6.2">17.2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q6.3"name="q6"> <label for="3q6.3">15.2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q6.4"name="q6"> <label for="3q6.4">14.2</label></div>
+                                                <p>Q7)A resistance of 50Ω is connected in parallel with a resistance of
+                                                        120Ω. The applied voltage is 220V. Find current across 120Ω
+                                                        resistor.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q7.1"name="q7"> <label for="3q7.1">1.6</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q7.2"name="q7"> <label for="3q7.2">1.7</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q7.3"name="q7"> <label for="3q7.3">1.8</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q7.4"name="q7"> <label for="3q7.4">1.9</label></div>
+                                                <p>Q8)Three resistor each of 30Ω are connected in parallel. Find total
+                                                        resistance</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q8.1"name="q8"> <label for="3q8.1">10</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q8.2"name="q8"> <label for="3q8.2">30</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q8.3"name="q8"> <label for="3q8.3">60</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q8.4"name="q8"> <label for="3q8.4">90</label></div>
+                                                <p>Q9)In a circuit with resistor each of same value are connected in
+                                                        parallel. The total value of resistance is equal to</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q9.1"name="q9"> <label for="3q9.1">sum for resistor</label> </div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q9.2"name="q9"> <label for="3q9.2">resistor value divided by number of resistor</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q9.3"name="q9"> <label for="3q9.3">total resistance value divided by number of resistor</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q9.4"name="q9"> <label for="3q9.4">resistor value multiplied by number of resistors</label></div>
+                                                <p>Q10)Two resistor of 40Ω and 20Ω are connected in series and 60Ω is connected in parallel
+                                                        them. find current if applied voltage is 220V.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q10.1"name="q10"> <label for="3q10.1">5.3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q10.2"name="q10"> <label for="3q10.2">6.3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q10.3"name="q10"> <label for="3q10.3">7.3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q10.4"name="q10"> <label for="3q10.4">8.3</label></div>
+                                        </div>
+                                        <!-- resistor -->
+                                </div>
+                        </div>
+                        <!-- 4Temperature and material Expansion -->
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed type=button" data-bs-toggle="collapse"
+                                                data-bs-target="#vir" aria-expanded="false" aria-controls="collapseTwo">
+                                                Temperature and material
+                                        </button>
+                                </h2>
+                                <div id="vir" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                                <p>Q1)Convert 35C in Fahrnhite.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q1.1"name="q1"> <label for="4q1.1">95</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q1.2"name="q1"> <label for="4q1.2">90</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q1.3"name="q1"> <label for="4q1.3">85</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q1.4"name="q1"> <label for="4q1.4">80</label></div>
+
+                                                <p>Q2)Convert 40F to Celcius.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q2.1"name="q1"> <label for="4q2.1">4</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q2.2"name="q1"> <label for="4q2.2">6</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q2.3"name="q1"> <label for="4q2.3">8</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q2.4"name="q1"> <label for="4q2.4">2</label></div>
+                                                <p>Q3)Convert 40C to Kelvin</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q3.1"name="q1"> <label for="4q3.1">313.15</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q3.2"name="q1"> <label for="4q3.2">315.15</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q3.3"name="q1"> <label for="4q3.3">310.15</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q3.4"name="q1"> <label for="4q3.4">308.154</label></div>
+                                                <p>Q4)A steel rod is 5m at 20C. Find its length at -12C. alpha =
+                                                        0.000016 1/C.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q4.1"name="q1"> <label for="4q4.1">Sachin</label></div>
+                                                <div><sinput class="form-check-input mx-2" type="radio" id="4q4.2"name="q1"> <label for="4q4.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q4.3"name="q1"> <label for="4q4.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q4.4"name="q1"> <label for="4q4.4">Sachin4</label></div>
+
+                                                <p>Q5)Find volume of water at 90C if at 20C it is 1.5m³.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q5.1"name="q1"> <label for="4q5.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q5.2"name="q1"> <label for="4q5.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q5.3"name="q1"> <label for="4q5.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q5.4"name="q1"> <label for="4q5.4">Sachin4</label></div>
+                                                <p>Q6)A steel rod of 17.000mm has to be fitted in hole hole of diameter
+                                                        16.980. At what temperature it has to be colled in order to fit.
+                                                </p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q6.1"name="q1"> <label for="4q6.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q6.2"name="q1"> <label for="4q6.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q6.3"name="q1"> <label for="4q6.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="4q6.4"name="q1"> <label for="4q6.4">Sachin4</label></div>
+                                        </div>
+                                        <!-- resistor -->
+                                </div>
+                        </div>
+                        <!-- 5Gears, module, pitch -->
+                        <div class="accordion-item"> 
+                                <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed type=button" data-bs-toggle="collapse"
+                                                data-bs-target="#vir" aria-expanded="false" aria-controls="collapseTwo">
+                                                Gears, module, pitch
+                                        </button>
+                                </h2>
+                                <div id="vir" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                                <p>Q1)What will be dedendum diameter of gear if module=1.5mm and number of teeth is 60.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q1.1"name="q1"> <label for="5q1.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q1.2"name="q1"> <label for="5q1.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q1.3"name="q1"> <label for="5q1.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q1.4"name="q1"> <label for="5q1.4">Sachin4</label></div>
+                                                <p>Q2)Two spur gears are used in gear train. Module is 2mm and Z1=64, Z2=24. Calculate center distance.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q2.1"name="q1"> <label for="5q2.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q2.2"name="q1"> <label for="5q2.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q2.3"name="q1"> <label for="5q2.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q2.4"name="q1"> <label for="5q2.4">Sachin4</label></div>
+                                                <p>Q3)Moduel of gear is 1.5mm and number of teeth is 80. Find pitch circle diameter.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q3.1"name="q1"> <label for="5q3.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q3.2"name="q1"> <label for="5q3.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q3.3"name="q1"> <label for="5q3.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q3.4"name="q1"> <label for="5q3.4">Sachin4</label></div>
+                                                <p>Q4)Two gears of 12 teeth each and addendeum diameter of 32.5mm are connected. Find center distance.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q4.1"name="q1"> <label for="5q4.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q4.2"name="q1"> <label for="5q4.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q4.3"name="q1"> <label for="5q4.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q4.4"name="q1"> <label for="5q4.4">Sachin4</label></div>
+                                                <p>Q5)Gear ratio is 1.2. Z1=80 teeth. Pitch circle diameter of another gear is 120mm. Calculate number of teeth on second gear.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q5.1"name="q1"> <label for="5q5.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q5.2"name="q1"> <label for="5q5.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q5.3"name="q1"> <label for="5q5.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q5.4"name="q1"> <label for="5q5.4">Sachin4</label></div>
+                                                <p>Q6)A gear of rack and pinion drive has 16 teeth and 2mm Module and rotates 180 degree. Find the distance travelled by rack.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q6.1"name="q1"> <label for="5q6.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q6.2"name="q1"> <label for="5q6.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q6.3"name="q1"> <label for="5q6.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q6.4"name="q1"> <label for="5q6.4">Sachin4</label></div>
+                                                <p>Q7)Which transmission is best suited to transmit high torque to larger distance</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q7.1"name="q1"> <label for="5q7.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q7.2"name="q1"> <label for="5q7.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q7.3"name="q1"> <label for="5q7.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q7.4"name="q1"> <label for="5q7.4">Sachin4</label></div>
+                                                <p>Q8)How many gear should be there on worm wheel if gear ratio is 60:1 and 2 gears on thread.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q8.1"name="q1"> <label for="5q8.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q8.2"name="q1"> <label for="5q8.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q8.3"name="q1"> <label for="5q8.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q8.4"name="q1"> <label for="5q8.4">Sachin4</label></div>
+                                                <p>Q9)Yet</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q9.1"name="q1"> <label for="5q9.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q9.2"name="q1"> <label for="5q9.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q9.3"name="q1"> <label for="5q9.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q9.4"name="q1"> <label for="5q9.4">Sachin4</label></div>
+                                                <p>Q10)Efficiency of cylinder is 70%, piston dia is 250mm, stroke length
+                                                        is 400mm. Pressure input is 5 bar and its extension velocity is
+                                                        2m/s. what is the input power in kw?</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q10.1"name="q1"> <label for="5q10.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q10.2"name="q1"> <label for="5q10.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q10.3"name="q1"> <label for="5q10.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="5q10.4"name="q1"> <label for="5q10.4">Sachin4</label></div>
+                                        </div>
+                                        <!-- resistor -->
+                                </div>
+                        </div>
+                        <!-- 6Fluid Technology 1 Basics -->
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed type=button" data-bs-toggle="collapse"
+                                                data-bs-target="#vir" aria-expanded="false" aria-controls="collapseTwo">
+                                                Fluid Technology 1 Basics
+                                        </button>
+                                </h2>
+                                <div id="vir" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                                <p>Q1)What is another name for And gate?</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q1.1"name="q1"> <label for="6q1.1">Two pressure valve</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q1.2"name="q1"> <label for="6q1.2">Or Gate</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q1.3"name="q1"> <label for="6q1.3">Shuttel Valve</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q1.4"name="q1"> <label for="6q1.4">2/2 way Valve</label></div>
+                                                <p>Q2)What is another name for OR Gate?</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q2.1"name="q1"> <label for="6q2.1">Two pressure valve</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q2.2"name="q1"> <label for="6q2.2">Or Gate</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q2.3"name="q1"> <label for="6q2.3">Shuttel Valve</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q2.4"name="q1"> <label for="6q2.4">2/2 way Valve</label></div>
+                                                <p>Q3)Calculate force if piston dia is 30mm, pressure available is 6bar.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q3.1"name="q1"> <label for="6q3.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q3.2"name="q1"> <label for="6q3.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q3.3"name="q1"> <label for="6q3.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q3.4"name="q1"> <label for="6q3.4">Sachin4</label></div>
+                                                <p>Q4)What is the power output available in 1 minute if cylinder force is 20N and stroke length is 200mm</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q4.1"name="q1"> <label for="6q4.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q4.2"name="q1"> <label for="6q4.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q4.3"name="q1"> <label for="6q4.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q4.4"name="q1"> <label for="6q4.4">Sachin4</label></div>
+                                                <p>Q5)</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q5.1"name="q1"> <label for="6q5.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q5.2"name="q1"> <label for="6q5.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q5.3"name="q1"> <label for="6q5.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q5.4"name="q1"> <label for="6q5.4">Sachin4</label></div>
+                                                <p>Q6)Find power consumed in 30minutes by a motor to fill a tank whose
+                                                         diameter is 3m, height is 2m and is placed at 6m above motor.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q6.1"name="q1"> <label for="6q6.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q6.2"name="q1"> <label for="6q6.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q6.3"name="q1"> <label for="6q6.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q6.4"name="q1"> <label for="6q6.4">Sachin4</label></div>
+                                                <p>Q7)Find power consumed by conveyor of belt drive motor to transfer
+                                                        600N of force with pulley diameter of 150mm and 800rpm.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q7.1"name="q1"> <label for="6q7.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q7.2"name="q1"> <label for="6q7.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q7.3"name="q1"> <label for="6q7.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q7.4"name="q1"> <label for="6q7.4">Sachin4</label></div>
+                                                <p>Q8)Find efficiency if power input is 4Kw power output is 3kw.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q8.1"name="q1"> <label for="6q8.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q8.2"name="q1"> <label for="6q8.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q8.3"name="q1"> <label for="6q8.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q8.4"name="q1"> <label for="6q8.4">Sachin4</label></div>
+                                                <p>Q9)Find power input of motor with efficiency is 0.75 to pump 1m³/min
+                                                        of water to height of 1m.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q9.1"name="q1"> <label for="6q9.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="69.2"name="q1"> <label for="269.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q9.3"name="q1"> <label for="6q9.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q9.4"name="q1"> <label for="6q9.4">Sachin4</label></div>
+                                                <p>Q10)Efficiency of cylinder is 70%, piston dia is 250mm, stroke length
+                                                        is 400mm. Pressure input is 5 bar and its extension velocity is
+                                                        2m/s. what is the input power in kw?</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q10.1"name="q1"> <label for="6q10.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q10.2"name="q1"> <label for="6q10.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q10.3"name="q1"> <label for="6q10.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="6q10.4"name="q1"> <label for="6q10.4">Sachin4</label></div>
+                                        </div>
+                                        <!-- resistor -->
+                                </div>
+                        </div>
+                        <!-- 7Fluid Technology 2 -->
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed type=button" data-bs-toggle="collapse"
+                                                data-bs-target="#vir" aria-expanded="false" aria-controls="collapseTwo">
+                                                Fluid Technology 2
+                                        </button>
+                                </h2>
+                                <div id="vir" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                                <p>Q1)Mass = 50kg displacement = 1.9m find work done.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q1.1"
+                                                                name="q1"> <label for="2q1.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q1.2"
+                                                                name="q1"> <label for="2q1.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q1.3"
+                                                                name="q1"> <label for="2q1.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q1.4"
+                                                                name="q1"> <label for="2q1.4">Sachin4</label></div>
+
+                                                <p>Q2)Mass = 50kg displacement = 1.9m time=10sec find power consumed.
+                                                </p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q2.1"
+                                                                name="q1"> <label for="2q2.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q2.2"
+                                                                name="q1"> <label for="2q2.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q2.3"
+                                                                name="q1"> <label for="2q2.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q2.4"
+                                                                name="q1"> <label for="2q2.4">Sachin4</label></div>
+                                                <p>Q3)Work done = 1400J mass = 350kg find displacement.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q3.1"
+                                                                name="q1"> <label for="2q3.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q3.2"
+                                                                name="q1"> <label for="2q3.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q3.3"
+                                                                name="q1"> <label for="2q3.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q3.4"
+                                                                name="q1"> <label for="2q3.4">Sachin4</label></div>
+                                                <p>Q4)Mass = 80kg displacement = 150mm time=12sec find work done & power
+                                                        consumed.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q4.1"
+                                                                name="q1"> <label for="2q4.1">Sachin</label>
+                                                </div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q4.2"
+                                                                name="q1"> <label for="2q4.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q4.3"
+                                                                name="q1"> <label for="2q4.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q4.4"
+                                                                name="q1"> <label for="2q4.4">Sachin4</label></div>
+
+                                                <p>Q5)Power consumed = 15kw displacement = 5m time=30sec find work done.
+                                                </p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q5.1"
+                                                                name="q1"> <label for="2q5.1">Sachin</label>
+                                                </div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q5.2"
+                                                                name="q1"> <label for="2q5.2">Sachin2</label>
+                                                </div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q5.3"
+                                                                name="q1"> <label for="2q5.3">Sachin3</label>
+                                                </div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q5.4"
+                                                                name="q1"> <label for="2q5.4">Sachin4</label>
+                                                </div>
+                                                <p>Q6)Find power consumed in 30minutes by a motor to fill a tank whose
+                                                        diameter is 3m, height is 2m and is placed at 6m above motor.
+                                                </p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q6.1"
+                                                                name="q1"> <label for="2q6.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q6.2"
+                                                                name="q1"> <label for="2q6.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q6.3"
+                                                                name="q1"> <label for="2q6.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q6.4"
+                                                                name="q1"> <label for="2q6.4">Sachin4</label></div>
+                                                <p>Q7)Find power consumed by conveyor of belt drive motor to transfer
+                                                        600N of force with pulley diameter of 150mm and 800rpm.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q7.1"
+                                                                name="q1"> <label for="2q7.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q7.2"
+                                                                name="q1"> <label for="2q7.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q7.3"
+                                                                name="q1"> <label for="2q7.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q7.4"
+                                                                name="q1"> <label for="2q7.4">Sachin4</label></div>
+                                                <p>Q8)Find efficiency if power input is 4Kw power output is 3kw.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q8.1"
+                                                                name="q1"> <label for="2q8.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q8.2"
+                                                                name="q1"> <label for="2q8.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q8.3"
+                                                                name="q1"> <label for="2q8.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q8.4"
+                                                                name="q1"> <label for="2q8.4">Sachin4</label></div>
+                                                <p>Q9)Find power input of motor with efficiency is 0.75 to pump 1m³/min
+                                                        of water to height of 1m.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q9.1"
+                                                                name="q1"> <label for="2q9.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q9.2"
+                                                                name="q1"> <label for="2q9.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q9.3"
+                                                                name="q1"> <label for="2q9.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q9.4"
+                                                                name="q1"> <label for="2q9.4">Sachin4</label></div>
+                                                <p>Q10)Efficiency of cylinder is 70%, piston dia is 250mm, stroke length
+                                                        is 400mm. Pressure input is 5 bar and its extension velocity is
+                                                        2m/s. what is the input power in kw?</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q10.1"
+                                                                name="q1"> <label for="2q10.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q10.2"
+                                                                name="q1"> <label for="2q10.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2q10.3"
+                                                                name="q1"> <label for="2q10.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="q10.4"
+                                                                name="q1"> <label for="2q10.4">Sachin4</label></div>
+                                        </div>
+                                        <!-- resistor -->
+                                </div>
+                        </div>
+                        <!-- 8Basic SI units, area, volume -->
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed type=button" data-bs-toggle="collapse"
+                                                data-bs-target="#vir" aria-expanded="false" aria-controls="collapseTwo">
+                                                Basic SI units, area, volume
+                                        </button>
+                                </h2>
+                                <div id="vir" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                                <p>Q1)SI unit for length</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q1.1"name="q1"> <label for="8q1.1">meter</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q1.2"name="q1"> <label for="8q1.2">millimeter</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q1.3"name="q1"> <label for="8q1.3">kilometer</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q1.4"name="q1"> <label for="8q1.4">centimeter</label></div>
+
+                                                <p>Q2)SI unit for mass</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q2.1"name="q1"> <label for="8q2.1">gram</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q2.2"name="q1"> <label for="8q2.2">kilogram</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q2.3"name="q1"> <label for="8q2.3">tonne</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q2.4"name="q1"> <label for="8q2.4">pounds</label></div>
+                                                <p>Q3)1m = __microns</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q3.1"name="q1"> <label for="8q3.1">1000000</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q3.2"name="q1"> <label for="8q3.2">100000</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q3.3"name="q1"> <label for="8q3.3">10000</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q3.4"name="q1"> <label for="8q3.4">1000</label></div>
+                                                <p>Q4)1L = __cm³</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q4.1"name="q1"> <label for="8q4.1">10</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q4.2"name="q1"> <label for="8q4.2">100</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q4.3"name="q1"> <label for="8q4.3">1000</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q4.4"name="q1"> <label for="8q4.4">10000</label></div>
+
+                                                <p>Q5)25cm² = __m²</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q5.1"name="q1"> <label for="8q5.1">0.0025</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q5.2"name="q1"> <label for="8q5.2">0.025</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q5.3"name="q1"> <label for="8q5.3">0.00025</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q5.4"name="q1"> <label for="8q5.4">0.25</label></div>
+                                                <p>Q6)1bar = __Pa</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q6.1"name="q1"> <label for="8q6.1">1000</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q6.2"name="q1"> <label for="8q6.2">10000</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q6.3"name="q1"> <label for="8q6.3">100000</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q6.4"name="q1"> <label for="8q6.4">1000000</label></div>
+                                                <p>Q7)1Pa = __bar</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q7.1"name="q1"> <label for="8q7.1">0.00001</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q7.2"name="q1"> <label for="8q7.2">0.01</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q7.3"name="q1"> <label for="8q7.3">0.001</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q7.4"name="q1"> <label for="8q7.4">0.0001</label></div>
+                                                <p>Q8)10N = __kg</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q8.1"name="q1"> <label for="8q8.1">10</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q8.2"name="q1"> <label for="8q8.2">1</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q8.3"name="q1"> <label for="8q8.3">500g</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q8.4"name="q1"> <label for="8q8.4">5kg</label></div>
+                                                <p>Q9)10kg = __N</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="3q9.1"name="q1"> <label for="3q9.1">10</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q9.2"name="q1"> <label for="8q9.2">1</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q9.3"name="q1"> <label for="8q9.3">100</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q9.4"name="q1"> <label for="8q9.4">0.1</label></div>
+                                                <p>Q10)1byte = __bit.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q10.1"name="q1"> <label for="8q10.1">7</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q10.2"name="q1"> <label for="8q10.2">8</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q10.3"name="q1"> <label for="8q10.3">16</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="8q10.4"name="q1"> <label for="8q10.4">32</label></div>
+                                        </div>
+                                        <!-- resistor -->
+                                </div>
+                        </div>
+                        <!-- 9RLC circuit -->
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed type=button" data-bs-toggle="collapse"
+                                                data-bs-target="#vir" aria-expanded="false" aria-controls="collapseTwo">
+                                                Resistor Impedence Capacitance Circuit
+                                        </button>
+                                </h2>
+                                <div id="vir" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                                <p>Q1)Mass = 50kg displacement = 1.9m find work done.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q1.1"name="q1"> <label for="9q1.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q1.2"name="q1"> <label for="9q1.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q1.3"name="q1"> <label for="9q1.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q1.4"name="q1"> <label for="9q1.4">Sachin4</label></div>
+
+                                                <p>Q2)Mass = 50kg displacement = 1.9m time=10sec find power consumed.
+                                                </p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q2.1"name="q1"> <label for="9q2.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q2.2"name="q1"> <label for="9q2.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q2.3"name="q1"> <label for="9q2.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q2.4"name="q1"> <label for="9q2.4">Sachin4</label></div>
+                                                <p>Q3)Work done = 1400J mass = 350kg find displacement.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q3.1"name="q1"> <label for="9q3.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q3.2"name="q1"> <label for="9q3.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q3.3"name="q1"> <label for="9q3.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q3.4"name="q1"> <label for="9q3.4">Sachin4</label></div>
+                                                <p>Q4)Mass = 80kg displacement = 150mm time=12sec find work done & power
+                                                        consumed.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q4.1"name="q1"> <label for="9q4.1">Sachin</label>
+                                                </div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q4.2"name="q1"> <label for="9q4.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q4.3"name="q1"> <label for="9q4.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q4.4"name="q1"> <label for="9q4.4">Sachin4</label></div>
+
+                                                <p>Q5)Power consumed = 15kw displacement = 5m time=30sec find work done.
+                                                </p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q5.1"name="q1"> <label for="9q5.1">Sachin</label>
+                                                </div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q5.2"name="q1"> <label for="9q5.2">Sachin2</label>
+                                                </div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q5.3"name="q1"> <label for="9q5.3">Sachin3</label>
+                                                </div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q5.4"name="q1"> <label for="9q5.4">Sachin4</label>
+                                                </div>
+                                                <p>Q6)Find power consumed in 30minutes by a motor to fill a tank whose
+                                                        diameter is 3m, height is 2m and is placed at 6m above motor.
+                                                </p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q6.1"name="q1"> <label for="9q6.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q6.2"name="q1"> <label for="9q6.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q6.3"name="q1"> <label for="9q6.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q6.4"name="q1"> <label for="9q6.4">Sachin4</label></div>
+                                                <p>Q7)Find power consumed by conveyor of belt drive motor to transfer
+                                                        600N of force with pulley diameter of 150mm and 800rpm.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q7.1"name="q1"> <label for="9q7.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q7.2"name="q1"> <label for="9q7.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q7.3"name="q1"> <label for="9q7.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q7.4"name="q1"> <label for="9q7.4">Sachin4</label></div>
+                                                <p>Q8)Find efficiency if power input is 4Kw power output is 3kw.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q8.1"name="q1"> <label for="9q8.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q8.2"name="q1"> <label for="9q8.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q8.3"name="q1"> <label for="9q8.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q8.4"name="q1"> <label for="9q8.4">Sachin4</label></div>
+                                                <p>Q9)Find power input of motor with efficiency is 0.75 to pump 1m³/min
+                                                        of water to height of 1m.</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q9.1"name="q1"> <label for="9q9.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q9.2" name="q1"> <label for="9q9.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q9.3"name="q1"> <label for="9q9.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="9q9.4"name="q1"> <label for="9q9.4">Sachin4</label></div>
+                                                <p>Q10)Efficiency of cylinder is 70%, piston dia is 250mm, stroke length
+                                                        is 400mm. Pressure input is 5 bar and its extension velocity is
+                                                        2m/s. what is the input power in kw?</p>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2910.1"name="q1"> <label for="9q10.1">Sachin</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2910.2"name="q1"> <label for="9q10.2">Sachin2</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="2910.3"name="q1"> <label for="9q10.3">Sachin3</label></div>
+                                                <div><input class="form-check-input mx-2" type="radio" id="910.4"name="q1"> <label for="9q10.4">Sachin4</label></div>
+                                        </div>
+                                        <!-- resistor -->
+                                </div>
+                        </div>
                 </div>
-                <div class="overview_elements">
-                    <h2> <a href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">Electrical</a></h2>
-                    <li><a href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">Electrical Safety </a></li>
-                    <li><a href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">Basic Wirings</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">Logical Wiring</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">Circuit Challenge</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">VIR calculations</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Electrical/Electrical/electrical_home.html">Power Calculation</a></li>
-                </div>
-                <div class="overview_elements">
-                    <h2> <a href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Pneumatics</a></h2>
-                    <li><a href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Basic Safety</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Working Principle</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Components</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Circuit desiging</a></li>
-                    <!-- <li><a href="">Circuit Challenge</a></li> -->
-                    <li><a href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Cylinder force Calculation</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Pneumatics/Pneumatics/pneumatics_home.html">Pneumatics Cascading</a></li>
-                </div>
-                <div class="overview_elements">
-                    <h2> <a href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Electropneumatics</a></h2>
-                    <li><a href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Basic Safety</a></li>
-                    <li><a href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Solenoids</a></li>
-                    <!-- <li><a href="">Solenoids Working</a></li> -->
-                    <li><a href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Circuit making</a></li>
-                    <li><a href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Reed Switches</a></li>
-                    <li><a href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Circuit Challenge</a></li>
-                    <li><a href="https://sachinyadav74.github.io/ElectroPneumatics/ElectroPneumatics/electropneumatic_hompage.html">Automation Circuit</a></li>
-                </div>
-                <div class="overview_elements">
-                    <h2> <a href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Hydraulics</a></h2>
-                    <li><a href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Basic Safety</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Hydraulics Pipes</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Pumps</a></li>
-                     <li><a href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Hydraulic oils</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Hydraulics Circuits</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Circuit Challenge</a></li>
-                    <li><a href="https://sachinyadav74.github.io/Hydraulics/Hydraulics/hydraulics_homepage.html">Componenets</a></li>
-                </div>
-            </div>
         </div>
-    </section>
+        <footer class="container">
+                <p class="float-end"><a href="#">Back to top</a></p>
+                <p>© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+        <!-- Optional JavaScript; choose one of the two! -->
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
